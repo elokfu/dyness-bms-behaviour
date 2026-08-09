@@ -17,7 +17,7 @@ License: CC BY 4.0 (author confirmed)
 - Charge MOSFET remains on at the 3.5 V full threshold.
 - Balancing can continue between 3.5 and 3.6 V if balancing conditions are fulfilled.
 - Charge MOSFET off: Vmax >= 3.6 V.
-- Charge MOSFET on after cutoff: Vmax < 3.5 V.
+- Charge MOSFET closes again after cutoff when discharge is detected; no independent Vmax recovery threshold is established.
 - CCL recovery: SOC 100 % -> 99 % -> CCL 56 A, Charge Enabled true.
 - No explicit passive-balancing flag identified in decoded status bytes.
 

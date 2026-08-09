@@ -15,7 +15,7 @@ Do not change these values unless new measurement evidence is added and the auth
 - CCL 0 A / Charge Enabled false do **not** open the physical charge MOSFET.
 - Balancing continues between 3.5 and 3.6 V when balancing criteria remain fulfilled.
 - Charge MOSFET OFF: `Vmax >= 3.6 V`.
-- Charge MOSFET ON after cutoff: `Vmax < 3.5 V`.
+- Charge MOSFET closes again after cutoff when discharge is detected; do not state an independent `Vmax < 3.5 V` recovery threshold.
 - CCL restoration: SOC `100 % -> 99 %` -> CCL 56 A / Charge Enabled true.
 - The 3.5-3.6 V region is not recommended for deliberate charging because that ignores CCL = 0 A and may create warranty implications.
 

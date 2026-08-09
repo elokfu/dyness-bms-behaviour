@@ -14,7 +14,7 @@ The short version is:
 - charge MOSFET remains ON at the 3.5 V full threshold
 - balancing can continue between **3.5 and 3.6 V**
 - charge MOSFET OFF: **Vmax = 3.6 V**
-- charge MOSFET ON again: **Vmax < 3.5 V**
+- charge MOSFET closes again when **discharge is detected**; no independent Vmax recovery threshold is established
 - CCL returns to **56 A** when SOC changes from 100 % to 99 %
 
 The report also documents that the pack is 16S: cells 1-15 are direct telemetry and cell 16 is reconstructed from pack voltage in the CSV.

@@ -18,7 +18,7 @@ This repository is the publication and evidence package for an experimentally de
 | Individual resistor selection | `Vcell - Vmin >= 30 mV` | Cell resistor ON |
 | Full detection | `Vmax >= 3.5 V` | SOC 100 %, CCL 0 A, Charge Enabled false |
 | Charge MOSFET cutoff | `Vmax >= 3.6 V` | Charge MOSFET OFF |
-| Charge MOSFET recovery | `Vmax < 3.5 V` | Charge MOSFET ON |
+| Charge MOSFET recovery | Discharge detected after cutoff | Charge MOSFET ON |
 | Charge permission recovery | SOC `100 % -> 99 %` | CCL 56 A, Charge Enabled true |
 
 The **30 s timing** is an engineering hypothesis derived from transition behaviour and is explicitly identified as such in the report.
