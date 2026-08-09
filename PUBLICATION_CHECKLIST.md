@@ -1,9 +1,9 @@
 # Publication checklist
 
 - [ ] Author confirms license
-- [ ] Public GitHub repository created
-- [ ] GitHub Pages deployed and verified
-- [ ] Canonical URL chosen
+- [x] Public GitHub repository created
+- [x] GitHub Pages deployed and verified
+- [x] Canonical URL chosen
 - [ ] Zenodo draft created
 - [ ] DOI reserved before final PDF
 - [ ] DOI inserted into DOCX/PDF/CITATION/site metadata
