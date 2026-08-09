@@ -4,7 +4,7 @@
 
 Canonical page: https://elokfu.github.io/dyness-bms-behaviour/
 PDF report: https://elokfu.github.io/dyness-bms-behaviour/assets/Dyness_BMS_Balancing_Algorithm_Charge_Control_Firmware_2.50-71.10.11.pdf
-DOI: pending Zenodo reservation
+DOI: 10.5281/zenodo.21860970
 License: CC BY 4.0 (author confirmed)
 
 ## Key facts

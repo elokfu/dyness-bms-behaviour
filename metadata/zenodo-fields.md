@@ -7,6 +7,7 @@ Use these values in the Zenodo deposit UI or map them to the current Zenodo REST
 - **Creators:** Heiko Gerdes
 - **Publication date:** 2026-08-09
 - **Version:** 1.0.0
+- **Reserved DOI (draft):** 10.5281/zenodo.21860970
 - **Language:** English
 - **Description / Abstract:**
 

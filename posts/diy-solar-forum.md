@@ -20,7 +20,7 @@ The short version is:
 The report also documents that the pack is 16S: cells 1-15 are direct telemetry and cell 16 is reconstructed from pack voltage in the CSV.
 
 Report: https://elokfu.github.io/dyness-bms-behaviour/
-DOI: [INSERT AFTER ZENODO PUBLICATION]
+DOI: 10.5281/zenodo.21860970
 Raw data/source: https://github.com/elokfu/dyness-bms-behaviour
 
 These are experimental observations for firmware 2.50-71.10.11, not official Dyness specifications. I am especially interested in comparable logs from other firmware versions.

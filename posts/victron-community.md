@@ -20,7 +20,7 @@ Main observed results:
 The report includes the UML state-machine model, raw CSV measurements and the analysis figures so the conclusions can be checked independently.
 
 **Canonical report:** https://elokfu.github.io/dyness-bms-behaviour/
-**DOI:** [INSERT ZENODO DOI AFTER PUBLICATION]
+**DOI:** 10.5281/zenodo.21860970
 **Data / source repository:** https://github.com/elokfu/dyness-bms-behaviour
 
 Important: values are experimentally observed for the tested firmware and are not presented as official Dyness specifications. The report also explains why deliberately charging between 3.5 and 3.6 V is not recommended even though balancing continues there: doing so ignores the BMS request CCL = 0 A and could have warranty implications.

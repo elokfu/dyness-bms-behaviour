@@ -44,7 +44,7 @@ The reconstructed value is part of the complete 16-cell model, but its millivolt
 
 ## Citation
 
-Use `CITATION.cff`. A DOI should be reserved on Zenodo before the definitive v1.0 PDF is published, then inserted into the PDF, page metadata, `CITATION.cff` and repository metadata.
+Use `CITATION.cff`. Reserved Zenodo DOI for the definitive v1.0 record: `10.5281/zenodo.21860970`.
 
 ## Licensing
 
