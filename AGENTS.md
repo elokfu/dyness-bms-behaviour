@@ -11,6 +11,7 @@ Do not change these values unless new measurement evidence is added and the auth
 - Balancer global disable: `Ibat <= 1.4 A`.
 - 30 s current qualification is an **engineering hypothesis**, not firmware-confirmed fact.
 - Individual resistor selection: `Vcell - Vmin >= 30 mV`.
+- Individual passive-balancing channel current: approximately `60 mA` per selected cell, derived indirectly from matched-state telemetry; this is not a manufacturer specification.
 - Full detection: `Vmax >= 3.5 V` -> SOC 100 %, CCL 0 A, Charge Enabled false.
 - CCL 0 A / Charge Enabled false do **not** open the physical charge MOSFET.
 - Balancing continues between 3.5 and 3.6 V when balancing criteria remain fulfilled.

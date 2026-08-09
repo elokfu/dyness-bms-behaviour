@@ -10,6 +10,7 @@ The short version is:
 - balancing disable: **Ibat <= 1.4 A**
 - working timing hypothesis: **30 s qualification**
 - cell resistor selection: **Vcell >= Vmin + 30 mV**
+- estimated passive-balancing channel current: **approximately 60 mA per selected cell**, from an indirect matched-state calculation; conservative interpretation range **50-70 mA**
 - full detection: **Vmax = 3.5 V** -> SOC 100 %, CCL 0 A, Charge Enabled false
 - charge MOSFET remains ON at the 3.5 V full threshold
 - balancing can continue between **3.5 and 3.6 V**

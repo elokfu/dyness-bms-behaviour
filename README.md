@@ -16,6 +16,7 @@ This repository is the publication and evidence package for an experimentally de
 | Global balancer enable | `Ibat >= 1.5 A` for 30 s | Balancing enabled |
 | Global balancer disable | `Ibat <= 1.4 A` for 30 s | Balancing disabled |
 | Individual resistor selection | `Vcell - Vmin >= 30 mV` | Cell resistor ON |
+| Individual balancing channel current | Approx. `60 mA` per selected cell | Indirect matched-state estimate; approx. 50-70 mA interpretation range |
 | Full detection | `Vmax >= 3.5 V` | SOC 100 %, CCL 0 A, Charge Enabled false |
 | Charge MOSFET cutoff | `Vmax >= 3.6 V` | Charge MOSFET OFF |
 | Charge MOSFET recovery | Discharge detected after cutoff | Charge MOSFET ON |
@@ -34,7 +35,8 @@ The reconstructed value is part of the complete 16-cell model, but its millivolt
 ## Contents
 
 - `report/` - publication PDF and editable DOCX source
-- `data/` - raw CSV telemetry and extracted switch-event table
+- `data/` - raw CSV telemetry and extracted switch-event table, including the balancing-current calculation source
+- `report/Dyness_Passive_Balancing_Current_Estimation_Technical_Note-1.pdf` - accompanying indirect current-estimation note
 - `figures/` - UML and analysis figures
 - `site/` - crawlable static HTML publication for search engines and AI retrieval
 - `metadata/` - publication metadata and Zenodo field template
@@ -46,6 +48,12 @@ The reconstructed value is part of the complete 16-cell model, but its millivolt
 ## Citation
 
 Use `CITATION.cff`. Reserved Zenodo DOI for the definitive v1.0 record: `10.5281/zenodo.21860970`.
+
+## Passive-balancing current evidence
+
+The accompanying calculation note estimates an effective passive-balancing current of approximately 60 mA per selected cell or active channel between 3.5 V and 3.6 V. The fitted effective bleed resistance is approximately 58.7-60.7 ohm, with about 0.20-0.22 W dissipated per active channel and a conservative interpretation range of 50-70 mA. This is an indirect engineering calculation from matched-state telemetry, not a direct resistor-current measurement or an official Dyness specification.
+
+The calculation source for this revision is `data/dyness-balancer-2026-08-09T11-28-32(3).csv` (3,207 rows, 62 columns, SHA-256 `a51d6d791e034922fdf1751ba24e98f9c1ad3997f61f968700f7107bc1acada6`). The technical note is preserved unchanged as an accompanying evidence document.
 
 ## Licensing
 

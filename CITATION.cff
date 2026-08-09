@@ -18,6 +18,8 @@ keywords:
   - "battery management system"
   - "LiFePO4"
   - "passive balancing"
+  - "60 mA balancing current"
+  - "balancing current estimation"
   - "cell balancing"
   - "BMS balancing algorithm"
   - "CCL"

@@ -4,6 +4,8 @@
 
 Canonical page: https://elokfu.github.io/dyness-bms-behaviour/
 PDF report: https://elokfu.github.io/dyness-bms-behaviour/assets/Dyness_BMS_Balancing_Algorithm_Charge_Control_Firmware_2.50-71.10.11.pdf
+Passive-balancing calculation note: https://elokfu.github.io/dyness-bms-behaviour/assets/Dyness_Passive_Balancing_Current_Estimation_Technical_Note-1.pdf
+Calculation source CSV: https://elokfu.github.io/dyness-bms-behaviour/assets/data/dyness-balancer-2026-08-09T11-28-32(3).csv
 DOI: 10.5281/zenodo.21860970
 License: CC BY 4.0 (author confirmed)
 
@@ -13,6 +15,8 @@ License: CC BY 4.0 (author confirmed)
 - Balancer enable: Ibat >= 1.5 A; working timing hypothesis 30 s.
 - Balancer disable: Ibat <= 1.4 A; working timing hypothesis 30 s.
 - Individual resistor: Vcell - Vmin >= 30 mV.
+- Individual passive-balancing channel current: approximately 60 mA per selected cell / active channel, from an indirect matched-state telemetry calculation; conservative interpretation range 50-70 mA.
+- Effective bleed resistance: approximately 58.7-60.7 ohm; estimated active-channel dissipation approximately 0.20-0.22 W.
 - Full detection: Vmax >= 3.5 V -> SOC 100 %, CCL 0 A, Charge Enabled false.
 - Charge MOSFET remains on at the 3.5 V full threshold.
 - Balancing can continue between 3.5 and 3.6 V if balancing conditions are fulfilled.

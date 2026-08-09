@@ -8,6 +8,7 @@ Main observed results:
 
 - Passive balancing globally enables at **1.5 A** battery charging current and disables at **1.4 A**. A **30 s qualification time** is my engineering hypothesis from the observed transition timing.
 - Once balancing is enabled, an individual cell's balancing resistor is selected at **Vcell - Vmin >= 30 mV**.
+- The accompanying matched-state calculation estimates **approximately 60 mA per selected cell / active balancing channel** (roughly **50-70 mA** as a conservative interpretation range), not a manufacturer specification.
 - The battery has **16 physical cells**. Cells 1-15 are transmitted directly; cell 16 is reconstructed in the logger from pack voltage minus the sum of cells 1-15.
 - At **Vmax = 3.5 V**, the BMS sets the full state: **SOC = 100 %, CCL = 0 A, Charge Enabled = false**.
 - CCL = 0 A does **not** open the physical charge MOSFET. Current can still physically flow if the external charger ignores CCL.
