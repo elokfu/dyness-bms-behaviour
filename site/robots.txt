@@ -1,0 +1,13 @@
+# Public technical report: allow discovery by conventional and AI search crawlers.
+User-agent: *
+Allow: /
+
+# Explicitly allow OpenAI search indexing.
+User-agent: OAI-SearchBot
+Allow: /
+
+# The author wants the report available for possible AI training reuse as well.
+User-agent: GPTBot
+Allow: /
+
+Sitemap: https://elokfu.github.io/dyness-bms-behaviour/sitemap.xml

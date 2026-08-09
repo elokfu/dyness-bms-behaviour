@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use or discuss these findings, please cite this technical report."
+title: "Dyness BMS Balancing Algorithm and Charge-Control Behaviour - Experimental Characterization, Firmware 2.50-71.10.11"
+type: report
+authors:
+  - family-names: Gerdes
+    given-names: Heiko
+    email: hgerdes@tehnosys.ro
+version: 1.0.0
+date-released: '2026-08-09'
+url: 'https://elokfu.github.io/dyness-bms-behaviour/'
+keywords:
+  - "Dyness"
+  - "Dyness BMS"
+  - "battery management system"
+  - "LiFePO4"
+  - "passive balancing"
+  - "cell balancing"
+  - "BMS balancing algorithm"
+  - "CCL"
+  - "Charge Current Limit"
+  - "charge MOSFET"
+  - "charge FET"
+  - "SOC"
+  - "RS485"
+  - "CAN"
+  - "Victron"
+  - "DVCC"
+  - "cell voltage"
+  - "firmware 2.50-71.10.11"
+  - "PowerBrick"
