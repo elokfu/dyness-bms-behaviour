@@ -30,7 +30,7 @@ Do not change these values unless new measurement evidence is added and the auth
 ## Publication rules
 - Before any irreversible publication, verify there are no placeholder DOI tokens and no broken links.
 - Do not publish to Zenodo or submit a forum post without explicit author confirmation in the current session.
-- Do not choose a license without explicit author confirmation. CC BY 4.0 is recommended.
+- The author confirmed CC BY 4.0 for the repository, report and evidence; keep that license consistent in all publication metadata.
 - If a Zenodo DOI is reserved, insert the same DOI consistently into the PDF/DOCX title page, PDF metadata, `CITATION.cff`, web page structured metadata and repository metadata.
 - The canonical target URL is currently `https://tehnosys.ro/dyness-bms/`; if hosting differs, update all canonical, sitemap and structured-data URLs consistently.
 

@@ -1,6 +1,6 @@
 # Publication checklist
 
-- [ ] Author confirms license
+- [x] Author confirms license
 - [x] Public GitHub repository created
 - [x] GitHub Pages deployed and verified
 - [x] Canonical URL chosen

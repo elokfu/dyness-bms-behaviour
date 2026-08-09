@@ -28,12 +28,12 @@ If the author controls `tehnosys.ro` and wants this URL:
 
 If the Tehnosys site cannot be modified, use the GitHub Pages URL as canonical instead.
 
-## Phase C - License checkpoint (STOP for author confirmation)
-Ask exactly:
+## Phase C - License checkpoint (COMPLETED)
+The author confirmed in the current session:
 
 `Do you confirm publication of the report and data under CC BY 4.0?`
 
-Do not continue to final Zenodo publication until the author answers yes or provides another license.
+Answer: yes. CC BY 4.0 is now the selected license. Do not continue to final Zenodo publication until the separate final publish approval is received.
 
 ## Phase D - Zenodo DOI and definitive v1.0 (reserve DOI first)
 Zenodo supports reserving a DOI before publication so that the DOI can be inserted into the file itself.

@@ -14,7 +14,7 @@ A 16-cell Dyness battery BMS running battery software version 2.50-71.10.11 was 
 
 - **Keywords:** Dyness, Dyness BMS, battery management system, LiFePO4, passive balancing, cell balancing, BMS balancing algorithm, CCL, Charge Current Limit, charge MOSFET, charge FET, SOC, RS485, CAN, Victron, DVCC, cell voltage, firmware 2.50-71.10.11, PowerBrick
 - **Access:** Open
-- **License:** CC BY 4.0 **only after author confirmation**
+- **License:** CC BY 4.0 (author confirmed)
 - **Publisher:** Zenodo (default after deposit)
 - **Related identifier - source code/data:** https://github.com/elokfu/dyness-bms-behaviour
 - **Related identifier - web version:** https://elokfu.github.io/dyness-bms-behaviour/

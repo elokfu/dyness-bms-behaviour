@@ -48,4 +48,4 @@ Use `CITATION.cff`. A DOI should be reserved on Zenodo before the definitive v1.
 
 ## Licensing
 
-For maximum reuse and AI/search discoverability, **CC BY 4.0 is recommended**, but the author must explicitly confirm the license before publication. See `LICENSE_DECISION.md`.
+This repository, report and accompanying evidence are licensed under **CC BY 4.0**. See `LICENSE` and `LICENSE_DECISION.md`.
