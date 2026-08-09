@@ -16,13 +16,13 @@ Do not change these values unless new measurement evidence is added and the auth
 - CCL 0 A / Charge Enabled false do **not** open the physical charge MOSFET.
 - Balancing continues between 3.5 and 3.6 V when balancing criteria remain fulfilled.
 - Charge MOSFET OFF: `Vmax >= 3.6 V`.
-- Charge MOSFET closes again after cutoff when discharge is detected; do not state an independent `Vmax < 3.5 V` recovery threshold.
+- Physical charge-MOSFET reset after overvoltage cutoff: `Vmax < 3.45 V` (approximately 150 mV hysteresis from the 3.6 V cutoff), independent of discharge current.
 - CCL restoration: SOC `100 % -> 99 %` -> CCL 56 A / Charge Enabled true.
 - The 3.5-3.6 V region is not recommended for deliberate charging because that ignores CCL = 0 A and may create warranty implications.
 
 ## Editorial rules
 - Preserve the report disclaimer distinguishing observation from manufacturer specification.
-- Use round nominal thresholds (30 mV, 3.5 V, 3.6 V) in narrative text.
+- Use nominal thresholds (30 mV, 3.5 V full detection, 3.6 V cutoff and approximately 3.45 V physical reset) in narrative text, keeping the control layers distinct.
 - Never call the reconstructed cell 16 a nonexistent or ignored cell.
 - Keep balancing, CCL communication control and charge-MOSFET protection as separate control layers.
 - Prefer concrete question/answer headings on the web page because the publication is intended to answer real Dyness BMS searches.

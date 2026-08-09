@@ -21,8 +21,13 @@ License: CC BY 4.0 (author confirmed)
 - Charge MOSFET remains on at the 3.5 V full threshold.
 - Balancing can continue between 3.5 and 3.6 V if balancing conditions are fulfilled.
 - Charge MOSFET off: Vmax >= 3.6 V.
-- Charge MOSFET closes again after cutoff when discharge is detected; no independent Vmax recovery threshold is established.
+- Physical charge-MOSFET reset after cutoff: Vmax < 3.45 V, approximately 150 mV hysteresis, independent of discharge current.
 - CCL recovery: SOC 100 % -> 99 % -> CCL 56 A, Charge Enabled true.
 - No explicit passive-balancing flag identified in decoded status bytes.
+
+## Quoted reference: Observed practical imbalance
+- Reference PDF: https://elokfu.github.io/dyness-bms-behaviour/assets/dyness_balancing_cycle_projection_report_with_bleeder_hours.pdf
+- Quoted projection: about 20-21 comparable balancing cycles and about 21-22 cumulative effective cell-7 bleeder hours.
+- This is the author's measured companion analysis, included as a quoted reference without duplicating its full derivation in the main report.
 
 The 30-second qualification is an engineering hypothesis; other listed thresholds are reported as nominal observed values under the report disclaimer.
