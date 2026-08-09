@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use or discuss these findings, please cite this technical report."
-title: "Dyness BMS Balancing Algorithm and Charge-Control Behaviour - Experimental Characterization, Firmware 2.50-71.10.11"
+title: "Dyness Powerbrick Pro 14.3 kWh BMS Balancing Algorithm and Charge-Control Behaviour - Experimental Characterization, Firmware 2.50-71.10.11"
 type: report
 authors:
   - family-names: Gerdes
@@ -13,6 +13,7 @@ date-released: '2026-08-09'
 url: 'https://elokfu.github.io/dyness-bms-behaviour/'
 keywords:
   - "Dyness"
+  - "Dyness Powerbrick Pro 14.3 kWh"
   - "Dyness BMS"
   - "battery management system"
   - "LiFePO4"

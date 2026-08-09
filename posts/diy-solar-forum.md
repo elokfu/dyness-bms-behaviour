@@ -1,8 +1,8 @@
 # Suggested title
-Dyness BMS reverse-characterization: balancing 1.5 A / 30 mV, full at 3.5 V, charge MOSFET cutoff at 3.6 V
+Dyness Powerbrick Pro 14.3 kWh BMS reverse-characterization: balancing 1.5 A / 30 mV, full at 3.5 V, charge MOSFET cutoff at 3.6 V
 
 # Post
-I have published an experimental report on Dyness BMS behaviour (battery software **2.50-71.10.11**) with raw CSV evidence.
+I have published an experimental report on the Dyness Powerbrick Pro 14.3 kWh BMS (battery software **2.50-71.10.11**) with raw CSV evidence.
 
 The short version is:
 

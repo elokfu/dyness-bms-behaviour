@@ -1,8 +1,8 @@
 # Suggested title
-Dyness BMS balancing algorithm measured: 1.5 A current gate, 30 mV cell delta, CCL and charge-MOSFET behaviour
+Dyness Powerbrick Pro 14.3 kWh BMS balancing algorithm measured: 1.5 A current gate, 30 mV cell delta, CCL and charge-MOSFET behaviour
 
 # Post
-I have published a detailed experimental characterization of a Dyness BMS running battery software **2.50-71.10.11**. The report is based on continuous RS485 telemetry and controlled charge-current experiments rather than manufacturer firmware documentation.
+I have published a detailed experimental characterization of a Dyness Powerbrick Pro 14.3 kWh BMS running battery software **2.50-71.10.11**. The report is based on continuous RS485 telemetry and controlled charge-current experiments rather than manufacturer firmware documentation.
 
 Main observed results:
 

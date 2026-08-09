@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Dyness BMS Balancing: 1.5 A, 30 mV, CCL, 3.5 V Full and 3.6 V MOSFET</title>
-<meta name="description" content="Experimental Dyness BMS balancing algorithm and charge-control report for firmware 2.50-71.10.11: 1.5 A current gate, 30 mV cell delta, CCL 0 A at 3.5 V and charge MOSFET cutoff at 3.6 V.">
-<meta name="keywords" content="Dyness, Dyness BMS, battery management system, LiFePO4, passive balancing, cell balancing, BMS balancing algorithm, CCL, Charge Current Limit, charge MOSFET, charge FET, SOC, RS485, CAN, Victron, DVCC, cell voltage, firmware 2.50-71.10.11, PowerBrick">
+<title>Dyness Powerbrick Pro 14.3 kWh BMS: 1.5 A, 30 mV, CCL, 3.5 V Full and 3.6 V MOSFET</title>
+<meta name="description" content="Experimental Dyness Powerbrick Pro 14.3 kWh BMS balancing algorithm and charge-control report for firmware 2.50-71.10.11: 1.5 A current gate, 30 mV cell delta, CCL 0 A at 3.5 V and charge MOSFET cutoff at 3.6 V.">
+<meta name="keywords" content="Dyness, Dyness Powerbrick Pro 14.3 kWh, Dyness BMS, battery management system, LiFePO4, passive balancing, cell balancing, BMS balancing algorithm, CCL, Charge Current Limit, charge MOSFET, charge FET, SOC, RS485, CAN, Victron, DVCC, cell voltage, firmware 2.50-71.10.11, PowerBrick">
 <meta name="author" content="Heiko Gerdes">
 <link rel="canonical" href="https://elokfu.github.io/dyness-bms-behaviour/">
 <link rel="stylesheet" href="styles.css">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Dyness BMS Balancing Algorithm and Charge-Control Behaviour - Experimental Characterization, Firmware 2.50-71.10.11">
+<meta property="og:title" content="Dyness Powerbrick Pro 14.3 kWh BMS Balancing Algorithm and Charge-Control Behaviour - Experimental Characterization, Firmware 2.50-71.10.11">
 <meta property="og:description" content="Experimental Dyness BMS thresholds, state machines, raw telemetry and downloadable technical report.">
 <meta property="og:url" content="https://elokfu.github.io/dyness-bms-behaviour/">
-<meta name="citation_title" content="Dyness BMS Balancing Algorithm and Charge-Control Behaviour - Experimental Characterization, Firmware 2.50-71.10.11">
+<meta name="citation_title" content="Dyness Powerbrick Pro 14.3 kWh BMS Balancing Algorithm and Charge-Control Behaviour - Experimental Characterization, Firmware 2.50-71.10.11">
 <meta name="citation_author" content="Heiko Gerdes">
 <meta name="citation_publication_date" content="2026-08-09">
 <meta name="citation_doi" content="10.5281/zenodo.21860970">
@@ -24,8 +24,8 @@
 {
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "headline": "Dyness BMS Balancing Algorithm and Charge-Control Behaviour - Experimental Characterization, Firmware 2.50-71.10.11",
-  "name": "Dyness BMS Balancing Algorithm and Charge-Control Behaviour - Experimental Characterization, Firmware 2.50-71.10.11",
+  "headline": "Dyness Powerbrick Pro 14.3 kWh BMS Balancing Algorithm and Charge-Control Behaviour - Experimental Characterization, Firmware 2.50-71.10.11",
+  "name": "Dyness Powerbrick Pro 14.3 kWh BMS Balancing Algorithm and Charge-Control Behaviour - Experimental Characterization, Firmware 2.50-71.10.11",
   "datePublished": "2026-08-09",
   "dateModified": "2026-08-09",
   "author": {
@@ -33,8 +33,8 @@
     "name": "Heiko Gerdes",
     "email": "hgerdes@tehnosys.ro"
   },
-  "description": "A 16-cell Dyness battery BMS running battery software version 2.50-71.10.11 was experimentally characterized using continuous telemetry of cell voltages, battery current, SOC, CCL, charge-permission state, raw status bytes and BMS temperature. Cells 1-15 are transmitted directly and cell 16 is reconstructed from pack voltage minus the sum of cells 1-15. The observations separate passive balancing, communication-level charge control and physical charge-MOSFET protection. Balancing is enabled at a battery charge current of 1.5 A and disabled at 1.4 A, with a 30 s qualification time retained as an engineering hypothesis. Individual balancing resistors are selected when a cell is 30 mV above the minimum cell. At 3.5 V maximum cell voltage the BMS enters full state, reports SOC 100 %, CCL 0 A and Charge Enabled false while the charge MOSFET remains on. Balancing continues in the 3.5-3.6 V region if its current and cell-delta criteria remain fulfilled. At 3.6 V the charge MOSFET opens; after the highest cell falls below 3.5 V the MOSFET closes again. CCL returns to 56 A when SOC changes from 100 % to 99 %.",
-  "keywords": "Dyness, Dyness BMS, battery management system, LiFePO4, passive balancing, cell balancing, BMS balancing algorithm, CCL, Charge Current Limit, charge MOSFET, charge FET, SOC, RS485, CAN, Victron, DVCC, cell voltage, firmware 2.50-71.10.11, PowerBrick",
+  "description": "A Dyness Powerbrick Pro 14.3 kWh battery with a 16-cell Dyness BMS running battery software version 2.50-71.10.11 was experimentally characterized using continuous telemetry of cell voltages, battery current, SOC, CCL, charge-permission state, raw status bytes and BMS temperature. Cells 1-15 are transmitted directly and cell 16 is reconstructed from pack voltage minus the sum of cells 1-15. The observations separate passive balancing, communication-level charge control and physical charge-MOSFET protection. Balancing is enabled at a battery charge current of 1.5 A and disabled at 1.4 A, with a 30 s qualification time retained as an engineering hypothesis. Individual balancing resistors are selected when a cell is 30 mV above the minimum cell. At 3.5 V maximum cell voltage the BMS enters full state, reports SOC 100 %, CCL 0 A and Charge Enabled false while the charge MOSFET remains on. Balancing continues in the 3.5-3.6 V region if its current and cell-delta criteria remain fulfilled. At 3.6 V the charge MOSFET opens; after the highest cell falls below 3.5 V the MOSFET closes again. CCL returns to 56 A when SOC changes from 100 % to 99 %.",
+  "keywords": "Dyness, Dyness Powerbrick Pro 14.3 kWh, Dyness BMS, battery management system, LiFePO4, passive balancing, cell balancing, BMS balancing algorithm, CCL, Charge Current Limit, charge MOSFET, charge FET, SOC, RS485, CAN, Victron, DVCC, cell voltage, firmware 2.50-71.10.11, PowerBrick",
   "url": "https://elokfu.github.io/dyness-bms-behaviour/",
   "mainEntityOfPage": "https://elokfu.github.io/dyness-bms-behaviour/",
   "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -58,19 +58,19 @@
 <body>
 <header>
   <div class="meta"><span>Technical report</span><span>Firmware 2.50-71.10.11</span><span>9 August 2026</span></div>
-  <h1>Dyness BMS Balancing Algorithm and Charge-Control Behaviour</h1>
-  <p class="lead">Experimental characterization of passive balancing, CCL/full-charge behaviour and physical charge-MOSFET protection, with raw telemetry, UML state machines and reproducible threshold evidence.</p>
+  <h1>Dyness Powerbrick Pro 14.3 kWh BMS Balancing and Charge-Control Behaviour</h1>
+  <p class="lead">Experimental characterization of passive balancing, CCL/full-charge behaviour and physical charge-MOSFET protection in a Dyness Powerbrick Pro 14.3 kWh battery, with raw telemetry, UML state machines and reproducible threshold evidence.</p>
   <p><strong>Heiko Gerdes</strong> · <a href="mailto:hgerdes@tehnosys.ro">hgerdes@tehnosys.ro</a></p>
   <div class="downloads">
     <a href="assets/Dyness_BMS_Balancing_Algorithm_Charge_Control_Firmware_2.50-71.10.11.pdf">Download technical report (PDF)</a>
     <a href="#data">Download raw CSV data</a>
-    <a href="https://github.com/REPLACE_OWNER/dyness-bms-behaviour">GitHub repository</a>
+    <a href="https://github.com/elokfu/dyness-bms-behaviour">GitHub repository</a>
   </div>
 </header>
 <main>
 <section>
 <h2>Abstract</h2>
-<p>A 16-cell Dyness battery BMS running battery software version 2.50-71.10.11 was experimentally characterized using continuous telemetry of cell voltages, battery current, SOC, CCL, charge-permission state, raw status bytes and BMS temperature. Cells 1-15 are transmitted directly and cell 16 is reconstructed from pack voltage minus the sum of cells 1-15. The observations separate passive balancing, communication-level charge control and physical charge-MOSFET protection. Balancing is enabled at a battery charge current of 1.5 A and disabled at 1.4 A, with a 30 s qualification time retained as an engineering hypothesis. Individual balancing resistors are selected when a cell is 30 mV above the minimum cell. At 3.5 V maximum cell voltage the BMS enters full state, reports SOC 100 %, CCL 0 A and Charge Enabled false while the charge MOSFET remains on. Balancing continues in the 3.5-3.6 V region if its current and cell-delta criteria remain fulfilled. At 3.6 V the charge MOSFET opens; after the highest cell falls below 3.5 V the MOSFET closes again. CCL returns to 56 A when SOC changes from 100 % to 99 %.</p>
+<p>A Dyness Powerbrick Pro 14.3 kWh battery with a 16-cell Dyness BMS running battery software version 2.50-71.10.11 was experimentally characterized using continuous telemetry of cell voltages, battery current, SOC, CCL, charge-permission state, raw status bytes and BMS temperature. Cells 1-15 are transmitted directly and cell 16 is reconstructed from pack voltage minus the sum of cells 1-15. The observations separate passive balancing, communication-level charge control and physical charge-MOSFET protection. Balancing is enabled at a battery charge current of 1.5 A and disabled at 1.4 A, with a 30 s qualification time retained as an engineering hypothesis. Individual balancing resistors are selected when a cell is 30 mV above the minimum cell. At 3.5 V maximum cell voltage the BMS enters full state, reports SOC 100 %, CCL 0 A and Charge Enabled false while the charge MOSFET remains on. Balancing continues in the 3.5-3.6 V region if its current and cell-delta criteria remain fulfilled. At 3.6 V the charge MOSFET opens; after the highest cell falls below 3.5 V the MOSFET closes again. CCL returns to 56 A when SOC changes from 100 % to 99 %.</p>
 <div class="callout"><strong>Scope:</strong> These values are experimentally observed for the tested BMS/software version and are not official Dyness firmware specifications. The 30 s current qualification remains an engineering hypothesis.</div>
 </section>
 
@@ -132,13 +132,13 @@
 
 <section>
 <h2>Citation and reuse</h2>
-<p><strong>Suggested citation:</strong> Gerdes, Heiko (2026). <em>Dyness BMS Balancing Algorithm and Charge-Control Behaviour - Experimental Characterization, Firmware 2.50-71.10.11</em>. Version 1.0.0. DOI: 10.5281/zenodo.21860970.</p>
+<p><strong>Suggested citation:</strong> Gerdes, Heiko (2026). <em>Dyness Powerbrick Pro 14.3 kWh BMS Balancing Algorithm and Charge-Control Behaviour - Experimental Characterization, Firmware 2.50-71.10.11</em>. Version 1.0.0. DOI: 10.5281/zenodo.21860970.</p>
 <p>This repository and report are licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
-<div><span class="badge">Dyness</span><span class="badge">Dyness BMS</span><span class="badge">battery management system</span><span class="badge">LiFePO4</span><span class="badge">passive balancing</span><span class="badge">cell balancing</span><span class="badge">BMS balancing algorithm</span><span class="badge">CCL</span><span class="badge">Charge Current Limit</span><span class="badge">charge MOSFET</span><span class="badge">charge FET</span><span class="badge">SOC</span><span class="badge">RS485</span><span class="badge">CAN</span><span class="badge">Victron</span><span class="badge">DVCC</span><span class="badge">cell voltage</span><span class="badge">firmware 2.50-71.10.11</span><span class="badge">PowerBrick</span></div>
+<div><span class="badge">Dyness</span><span class="badge">Dyness Powerbrick Pro 14.3 kWh</span><span class="badge">Dyness BMS</span><span class="badge">battery management system</span><span class="badge">LiFePO4</span><span class="badge">passive balancing</span><span class="badge">cell balancing</span><span class="badge">BMS balancing algorithm</span><span class="badge">CCL</span><span class="badge">Charge Current Limit</span><span class="badge">charge MOSFET</span><span class="badge">charge FET</span><span class="badge">SOC</span><span class="badge">RS485</span><span class="badge">CAN</span><span class="badge">Victron</span><span class="badge">DVCC</span><span class="badge">cell voltage</span><span class="badge">firmware 2.50-71.10.11</span><span class="badge">PowerBrick</span></div>
 </section>
 </main>
 <footer>
-<p>Author: Heiko Gerdes · <a href="mailto:hgerdes@tehnosys.ro">hgerdes@tehnosys.ro</a> · Battery software tested: 2.50-71.10.11.</p>
+<p>Author: Heiko Gerdes · <a href="mailto:hgerdes@tehnosys.ro">hgerdes@tehnosys.ro</a> · Battery type tested: Dyness Powerbrick Pro 14.3 kWh · Battery software tested: 2.50-71.10.11.</p>
 <p>This page is intentionally text-rich and crawlable so concrete Dyness BMS questions can resolve to specific measured answers.</p>
 </footer>
 </body>

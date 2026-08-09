@@ -1,8 +1,9 @@
-# Dyness BMS Balancing Algorithm and Charge-Control Behaviour
+# Dyness Powerbrick Pro 14.3 kWh BMS Balancing and Charge-Control Behaviour
 
 **Author:** Heiko Gerdes  
 **Contact:** hgerdes@tehnosys.ro  
-**Battery software version tested:** `2.50-71.10.11`  
+**Battery software version tested:** `2.50-71.10.11`
+**Battery type tested:** `Dyness Powerbrick Pro 14.3 kWh`
 **Report version:** 1.0.0  
 **Publication date:** 2026-08-09
 
