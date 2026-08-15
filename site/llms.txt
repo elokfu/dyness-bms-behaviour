@@ -21,7 +21,7 @@ License: CC BY 4.0 (author confirmed)
 - Charge MOSFET remains on at the 3.5 V full threshold.
 - Balancing can continue between 3.5 and 3.6 V if balancing conditions are fulfilled.
 - Charge MOSFET off: Vmax >= 3.6 V.
-- Physical charge-MOSFET reset after cutoff: Vmax < 3.45 V, approximately 150 mV hysteresis, independent of discharge current.
+- Physical charge-MOSFET reset after cutoff: Vmax < 3.45 V or effective-discharge bit set. The bit is observed to set at approximately 1-1.5 A discharge current; the voltage route has approximately 150 mV hysteresis.
 - CCL recovery: SOC 100 % -> 99 % -> CCL 56 A, Charge Enabled true.
 - No explicit passive-balancing flag identified in decoded status bytes.
 

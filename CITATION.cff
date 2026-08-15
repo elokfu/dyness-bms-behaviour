@@ -28,6 +28,8 @@ keywords:
   - "charge FET"
   - "3.45 V charge MOSFET reset"
   - "150 mV protection hysteresis"
+  - "effective discharge bit"
+  - "1-1.5 A discharge MOSFET reset"
   - "observed practical imbalance"
   - "SOC"
   - "RS485"

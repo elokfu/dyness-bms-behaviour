@@ -15,7 +15,7 @@ The short version is:
 - charge MOSFET remains ON at the 3.5 V full threshold
 - balancing can continue between **3.5 and 3.6 V**
 - charge MOSFET OFF: **Vmax = 3.6 V**
-- after the 3.6 V cutoff, physical charge-MOSFET reset occurs below approximately **Vmax = 3.45 V**, giving approximately **150 mV** protection hysteresis
+- after the 3.6 V cutoff, physical charge-MOSFET reset occurs either below approximately **Vmax = 3.45 V** or when the **effective discharge bit is set**; in the tested system that bit is set at approximately **1-1.5 A discharge current**
 - CCL returns to **56 A** when SOC changes from 100 % to 99 %
 
 The report also documents that the pack is 16S: cells 1-15 are direct telemetry and cell 16 is reconstructed from pack voltage in the CSV.

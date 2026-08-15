@@ -8,7 +8,7 @@ required=[root/'README.md',root/'CITATION.cff',root/'site/index.html',root/'site
 for p in required:
     if not p.exists(): errors.append(f"missing: {p.relative_to(root)}")
 html=(root/'site/index.html').read_text(encoding='utf-8')
-for term in ['2.50-71.10.11','1.5 A','1.4 A','30 mV','3.5 V','3.6 V','3.45 V','150 mV','16-cell','cell 16','Observed practical imbalance']:
+for term in ['2.50-71.10.11','1.5 A','1.4 A','30 mV','3.5 V','3.6 V','3.45 V','150 mV','effective discharge','16-cell','cell 16','Observed practical imbalance']:
     if term not in html: errors.append(f"site missing required term: {term}")
 robots=(root/'site/robots.txt').read_text(encoding='utf-8')
 if 'OAI-SearchBot' not in robots: errors.append('robots.txt does not explicitly mention OAI-SearchBot')
