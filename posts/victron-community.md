@@ -14,7 +14,7 @@ Main observed results:
 - CCL = 0 A does **not** open the physical charge MOSFET. Current can still physically flow if the external charger ignores CCL.
 - Passive balancing continues in the **3.5-3.6 V** region when its current and cell-delta conditions remain fulfilled.
 - At **Vmax = 3.6 V**, the BMS opens the charge MOSFET and physically interrupts charging.
-- After the overvoltage cutoff at approximately **3.60 V**, the charge MOSFET resets either below approximately **3.45 V** (approximately **150 mV** voltage hysteresis) or when the observed **effective discharge bit** is set. In this system the bit is set at approximately **1-1.5 A discharge current**.
+- After the overvoltage cutoff at approximately **3.60 V**, the charge MOSFET resets only when the highest cell falls strictly below approximately **3.45 V**, giving approximately **150 mV** voltage hysteresis.
 - Normal communication-level charging permission returns separately when SOC falls from **100 % to 99 %**, at which point CCL returns to **56 A**.
 - No explicit passive-balancing bit was found in the decoded status bytes. The full/high-cell transition does change `status3` from `0x80` to `0x88`.
 

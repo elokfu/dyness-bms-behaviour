@@ -19,7 +19,7 @@ This repository is the publication and evidence package for an experimentally de
 | Individual balancing channel current | Approx. `60 mA` per selected cell | Indirect matched-state estimate; approx. 50-70 mA interpretation range |
 | Full detection | `Vmax >= 3.5 V` | SOC 100 %, CCL 0 A, Charge Enabled false |
 | Charge MOSFET cutoff | `Vmax >= 3.6 V` | Charge MOSFET OFF |
-| Charge MOSFET reset | `Vmax < 3.45 V` **or** effective-discharge bit set | Charge MOSFET ON; bit observed set at approx. 1-1.5 A discharge |
+| Charge MOSFET reset | strict `Vmax < 3.45 V` after cutoff | Charge MOSFET ON; approx. 150 mV hysteresis |
 | Charge permission recovery | SOC `100 % -> 99 %` | CCL 56 A, Charge Enabled true |
 
 The **30 s timing** is an engineering hypothesis derived from transition behaviour and is explicitly identified as such in the report.
@@ -60,7 +60,7 @@ The calculation source for this revision is `data/dyness-balancer-2026-08-09T11-
 
 The supplied `report/dyness_balancing_cycle_projection_report_with_bleeder_hours.pdf` is included unchanged as a quoted companion measurement reference. Its projection states: “Best working estimate: about 20-21 comparable balancing cycles, corresponding to about 21-22 cumulative effective cell-7 bleeder hours.” This is the author's own measured calculation under its documented assumptions, quoted here without duplicating its full derivation. SHA-256: `8eac7d25ae654babeb66347a2a87693a94329f15c5d25b0514f665b4ca99fcc8`.
 
-The physical charge-MOSFET reset has two observed triggers after cutoff: the highest cell falling below approximately 3.45 V, giving approximately 150 mV of voltage hysteresis, or the `effective discharge` bit becoming set. In the tested system, that bit is set when discharge current reaches approximately 1-1.5 A. The 3.50 V full-detection/CCL threshold remains separate.
+The physical charge-MOSFET reset criterion is strict: after cutoff at approximately 3.60 V, recovery is observed only when the highest cell falls below approximately 3.45 V, giving approximately 150 mV of protection hysteresis. The 3.50 V full-detection/CCL threshold remains separate.
 
 ## Licensing
 
